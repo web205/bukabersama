@@ -1,0 +1,19 @@
+<!-- file1.html -->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Ini HTML1</h1>
+
+<div id="content"></div>
+
+<script>
+fetch('index.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('content').innerHTML = data;
+  })
+  .catch(error => console.error('Error:', error));
+</script>
+
+</body>
+</html>
