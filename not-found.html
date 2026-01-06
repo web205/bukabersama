@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Halaman Tidak Ditemukan</title>
+
+<style>
+    body {
+        margin: 0;
+        background-color: #e6eddc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Georgia", serif;
+    }
+
+    .wrapper {
+        width: 390px;
+        background: #fafaf6;
+        padding: 40px 30px 60px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Background watercolor */
+    .wrapper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("https://zeinvitation.com/wp-content/uploads/2023/03/13312252_v708-aum-15-b-diwali-1-scaled.jpg") center/cover no-repeat;
+        opacity: 0.15;
+        z-index: 0;
+    }
+
+    /* Lampion */
+    .lampion {
+        position: absolute;
+        top: 15px;
+        width: 55px;
+        z-index: 1;
+    }
+
+    .lampion.left {
+        left: 30px;
+    }
+
+    .lampion.right {
+        right: 30px;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: #c8a14d;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 10px 0 5px;
+        color: #1f3b3a;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 15px;
+        color: #2f5d5a;
+    }
+
+    .date {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background: #f3b53f;
+        color: #000;
+        text-decoration: none;
+        padding: 12px 32px;
+        border-radius: 30px;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #e2a832;
+    }
+
+    /* Siluet masjid */
+    .mosque {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: url("https://zeinvitation.com/wp-content/uploads/2023/03/13312252_v708-aum-15-b-diwali-1-scaled.jpg") bottom center/contain no-repeat;
+        opacity: 0.2;
+        z-index: 1;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+    <div class="content">
+        <div class="logo">✦</div>
+
+        <h1>404</h1>
+        <h2>Halaman Ini Tidak Ditemukan</h2>
+
+<!--         <div class="date">Mohon Maaf</div>
+ -->
+        <p>
+            Akun anda sudah Expired
+            Silakan lanjutkan ke halaman pembelian resmi kami.
+        </p>
+
+        <a href="https://shopee.co.id/" target="_blank" class="btn">
+            🛒 Buka Shopee
+        </a>
+    </div>
+
+    <div class="mosque"></div>
+</div>
+
+</body>
+</html>
