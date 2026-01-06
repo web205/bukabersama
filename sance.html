@@ -2,7 +2,7 @@
 <div id="content"></div>
 
 <script>
-fetch('index.html')
+fetch('index-default.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('content').innerHTML = data;
