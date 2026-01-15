@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'loveicons';
+  src: url('../font/loveicons.eot?24576229');
+  src: url('../font/loveicons.eot?24576229#iefix') format('embedded-opentype'),
+       url('../font/loveicons.woff2?24576229') format('woff2'),
+       url('../font/loveicons.woff?24576229') format('woff'),
+       url('../font/loveicons.ttf?24576229') format('truetype'),
+       url('../font/loveicons.svg?24576229#loveicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'loveicons';
+    src: url('../font/loveicons.svg?24576229#loveicons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "loveicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-002-shopping-bag:before { content: '\e800'; } /* '' */
+.icon-003-padlock:before { content: '\e801'; } /* '' */
+.icon-004-wedding-ring:before { content: '\e802'; } /* '' */
+.icon-001-double-bed:before { content: '\e803'; } /* '' */
+.icon-005-wristwatch:before { content: '\e804'; } /* '' */
+.icon-006-book:before { content: '\e805'; } /* '' */
+.icon-007-shirt:before { content: '\e806'; } /* '' */
+.icon-009-cup:before { content: '\e807'; } /* '' */
+.icon-008-dress:before { content: '\e808'; } /* '' */
+.icon-011-wedding-card:before { content: '\e809'; } /* '' */
+.icon-010-love-letter:before { content: '\e80a'; } /* '' */
+.icon-012-gender:before { content: '\e80b'; } /* '' */
+.icon-013-gift-box:before { content: '\e80c'; } /* '' */
+.icon-014-chocolate-box:before { content: '\e80d'; } /* '' */
+.icon-015-smartphone:before { content: '\e80e'; } /* '' */
+.icon-016-wedding-video:before { content: '\e80f'; } /* '' */
+.icon-017-idea:before { content: '\e810'; } /* '' */
+.icon-018-room-key:before { content: '\e811'; } /* '' */
+.icon-019-love-letter:before { content: '\e812'; } /* '' */
+.icon-020-earrings:before { content: '\e813'; } /* '' */
+.icon-021-luggage:before { content: '\e814'; } /* '' */
+.icon-022-altar:before { content: '\e815'; } /* '' */
+.icon-023-present:before { content: '\e816'; } /* '' */
+.icon-024-perfume:before { content: '\e817'; } /* '' */
+.icon-025-airplane:before { content: '\e818'; } /* '' */
+.icon-026-church:before { content: '\e819'; } /* '' */
+.icon-027-photo-camera:before { content: '\e81a'; } /* '' */
+.icon-028-calendar:before { content: '\e81b'; } /* '' */
+.icon-029-search:before { content: '\e81c'; } /* '' */
+.icon-030-heart:before { content: '\e81d'; } /* '' */
+.icon-031-magnet:before { content: '\e81e'; } /* '' */
+.icon-032-dinner:before { content: '\e81f'; } /* '' */
+.icon-033-love-potion:before { content: '\e820'; } /* '' */
+.icon-034-cake:before { content: '\e821'; } /* '' */
+.icon-036-holiday:before { content: '\e822'; } /* '' */
+.icon-035-birds:before { content: '\e823'; } /* '' */
+.icon-038-couple:before { content: '\e824'; } /* '' */
+.icon-039-broken-heart:before { content: '\e825'; } /* '' */
+.icon-040-padlock:before { content: '\e826'; } /* '' */
+.icon-041-chocolate-bar:before { content: '\e827'; } /* '' */
+.icon-042-necklace:before { content: '\e828'; } /* '' */
+.icon-043-cupid:before { content: '\e829'; } /* '' */
+.icon-044-cheers:before { content: '\e82a'; } /* '' */
+.icon-046-girl:before { content: '\e82b'; } /* '' */
+.icon-045-wine:before { content: '\e82c'; } /* '' */
+.icon-047-boy:before { content: '\e82d'; } /* '' */
+.icon-048-headset:before { content: '\e82e'; } /* '' */
+.icon-049-romantic-movie:before { content: '\e82f'; } /* '' */
+.icon-037-wedding-car:before { content: '\e830'; } /* '' */
+.icon-050-wedding-contract:before { content: '\e831'; } /* '' */
