@@ -38,23 +38,25 @@
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
+
 <style>
-/* PRELOADER */
+/* KUNCI TOTAL HALAMAN */
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+}
+
+/* FULL SCREEN LOADER */
 #preloader {
   position: fixed;
   inset: 0;
   background: #ffffff;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity .4s ease;
-}
-
-#preloader.hide {
-  opacity: 0;
-  pointer-events: none;
 }
 
 /* Spinner */
@@ -382,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel='stylesheet' id='fea-public-css' href='./wp-content/plugins/acf-frontend-form-element/assets/css/frontend-admin-min.css?ver=3.28.21' media='all' />
 <link rel='stylesheet' id='buttons-css' href='./wp-includes/css/buttons.min.css?ver=6.9' media='all' />
 </head>
-<body class="wp-singular general-invitation-template-default single single-general-invitation postid-129497 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js hello-elementor-default elementor-default elementor-template-canvas elementor-kit-5 elementor-page-129264">
+<body class="wp-singular general-invitation-template-default single single-general-invitation postid-129497 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js hello-elementor-default elementor-default elementor-template-canvas elementor-kit-5 elementor-page-129264 loading">
 
 <div id="preloader">
   <div class="loader"></div>
@@ -1527,14 +1529,13 @@ tinymce.ScriptLoader.markDone( './wp-includes/js/tinymce/langs/en.js' );
             }
         });
     </script>
-    <script>
+		<script>
 		window.addEventListener('load', function () {
 		  const preloader = document.getElementById('preloader');
-		  preloader.classList.add('hide');
 
-		  setTimeout(() => {
-		    preloader.remove();
-		  }, 400);
+		  // buka layar
+		  preloader.remove();
+		  document.body.classList.remove('loading');
 		});
 		</script>
 
