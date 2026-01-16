@@ -38,6 +38,40 @@
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
+<style>
+/* PRELOADER */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .4s ease;
+}
+
+#preloader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Spinner */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e0e0e0;
+  border-top-color: #4caf50;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+</style>
+
 <style id='wp-emoji-styles-inline-css'>
 
 	img.wp-smiley, img.emoji {
@@ -349,6 +383,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel='stylesheet' id='buttons-css' href='./wp-includes/css/buttons.min.css?ver=6.9' media='all' />
 </head>
 <body class="wp-singular general-invitation-template-default single single-general-invitation postid-129497 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js hello-elementor-default elementor-default elementor-template-canvas elementor-kit-5 elementor-page-129264">
+
+<div id="preloader">
+  <div class="loader"></div>
+  <p>Loading...</p>
+</div>
+
 	
 <!-- GTM Container placement set to automatic -->
 <!-- Google Tag Manager (noscript) -->
@@ -1487,6 +1527,17 @@ tinymce.ScriptLoader.markDone( './wp-includes/js/tinymce/langs/en.js' );
             }
         });
     </script>
+    <script>
+		window.addEventListener('load', function () {
+		  const preloader = document.getElementById('preloader');
+		  preloader.classList.add('hide');
+
+		  setTimeout(() => {
+		    preloader.remove();
+		  }, 400);
+		});
+		</script>
+
     </body>
 </html>
 
